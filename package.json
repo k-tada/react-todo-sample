@@ -4,7 +4,12 @@
   "description": "React + Webpack + Bable Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean:www": "rm -rf dist",
+    "clean": "npm run clean:www",
+    "copy:html": "cp src/index.html www/",
+    "copy": "npm run copy:html",
+    "build": "webpack",
+    "watch": "npm run clean && npm run copy && webpack --watch & `npm bin`/browser-sync start --config bs-config.js"
   },
   "author": "",
   "license": "MIT",
@@ -25,18 +30,13 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "babel-runtime": "^6.6.1",
+    "browser-sync": "^2.13.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-connect": "^3.2.2",
-    "gulp-if": "^2.0.0",
-    "gulp-webpack": "^1.5.0",
-    "require-dir": "^0.3.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "~1.12.12",
-    "webpack-dev-server": "^1.12.1"
+    "watch": "^0.19.1",
+    "webpack": "~1.12.12"
   }
 }
