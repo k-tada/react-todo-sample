@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import style from './AddForm.css';
+import style from './AddForm.less';
 import { FormControl } from 'react-bootstrap';
 
 @CSSModules( style )

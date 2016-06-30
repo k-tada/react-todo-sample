@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import style from './TodoList.css';
+import style from './TodoList.less';
 import { Checkbox } from 'react-bootstrap';
 
 @CSSModules( style )
