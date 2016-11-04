@@ -21,7 +21,7 @@ JavaScript（ES6） -> CommonJSスタイルのモジュールにコンパイル 
 下記コマンドを順次実行します。
 
 ```
-git clone git@github.com:YosukeSasaoka/tba-app-api.git
+git clone git@github.com:YosukeSasaoka/tba-app-client.git
 npm i
 npm run watch
 
