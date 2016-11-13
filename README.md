@@ -22,7 +22,7 @@ JavaScript（ES6） -> CommonJSスタイルのモジュールにコンパイル 
 
 ```
 git clone git@github.com:YosukeSasaoka/tba-app-client.git
-cd cd tba-app-client
+cd tba-app-client
 npm i
 npm run watch
 
